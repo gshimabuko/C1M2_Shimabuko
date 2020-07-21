@@ -1,0 +1,6 @@
+src/*.out
+src/*.o
+src/*.d
+src/*.i
+src/*.asm
+src/*.map
