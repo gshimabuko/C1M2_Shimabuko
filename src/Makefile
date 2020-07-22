@@ -112,6 +112,8 @@ compile-all: $(OBJS)
 .PHONY: build
 build: $(OBJS) $(DEPS)
 	$(CC) $(INCLUDES) $(OBJS) $(CFLAGS) $(LDFLAGS) -o $(TARGET).out
+	$(SIZE) -Atd $(TARGET).out
+	$(SIZE) $(TARGET).out
 .PHONY: clean
 clean:
 	rm -f *.o *.i *.map *.out *.asm *.d
